@@ -9,8 +9,8 @@ This website runs locally on the user's PC and uses python (flask) to scrape dat
 
 ## How do I install?
 1. Install Python (3.8).
-2. Open terminal in extracted folder.
-3. Run the following command:
+2. Download the files as zip, and extract into a new folder.
+3. Open the terminal in said folder and run the following command:
 `pip install -r requirements.txt`
 4. Open the file: `run_temtype.py` 
     - The cmd window will immediately close, this is normal.

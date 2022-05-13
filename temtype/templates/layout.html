@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>temtype</title>
+    <link rel="stylesheet" href="../static/master.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  </head>
+  <body>
+
+    <header>
+      <a href="/home"><h1>temtype</h1></a>
+    </header>
+
+    <form action="{{ url_for('matchup') }}" method="GET" autocomplete="off">
+      <input type="text" autocomplete="false" placeholder="temtem..." name="temtem" required>
+      <!--<button type="submit"><i class="fa fa-search"></i></button>-->
+    </form>
+
+      {% block content %}
+
+      {% endblock %}
+
+
+  </body>
+</html>

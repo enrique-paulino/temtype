@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+{% extends "layout.html" %}
+<html>
+  {% block content %}
+
+  <head>
+    <link rel="stylesheet" href="../static/general.css">
+    <style media="screen">
+      #tem:hover {
+        content: url("{{ luma }}");
+      }
+    </style>
+  </head>
+
+  <body>
+
+    <div class="wrap">
+        <img src="{{ reg }}" alt="left temtem" id="tem">
+        <h1>{{temtem}}</h1>
+        <hr>
+          <div class="type">
+            {% for type in types %}
+              <img src="../static/images/types/{{type}}.png" alt="" class="type-img">
+            {% endfor %}
+          </div>
+
+          <div class="matchup-wrap">
+            {% for multiplier, typings in matchups.items() %}
+              <div class="matchups">
+                <h3>takes {{multiplier}}x damage from:</h3>
+                {% for single in typings %}
+                  <img src="../static/images/types/{{single}}.png" alt="" class="type-img">
+                {% endfor %}
+              </div>
+            {% endfor %}
+          </div>
+
+
+
+
+
+    </div>
+
+
+
+
+  </body>
+  {% endblock %}
+</html>

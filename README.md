@@ -2,7 +2,7 @@
 **temtype** is a locally hosted website that shows you what types are strong, or weak, against certain TemTem.<br>
 Below is a gif demonstrating how to use the website which presents some cool features like showing the Luma variant on hover.
 
-<img src="https://i.imgur.com/YJtkB5I.gif" width="800" height="450"/>
+<img src="https://i.imgur.com/YJtkB5I.gif"/>
 
 ## How does it work?
 This website runs locally on the user's PC and uses python (flask) to scrape data off of the internet, as well as local json files, to return type matchups of certain TemTem based on the user's input.

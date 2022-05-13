@@ -15,3 +15,6 @@ This website runs locally on the user's PC and uses python (flask) to scrape dat
 4. Open the file: `run_temtype.py` 
     - The cmd window will immediately close, this is normal.
 5. Open `127.0.0.1:5000` in your browser and enjoy!
+
+## Why did I made it?
+I found myself always checking the wiki when playing TemTem to see the type matchups. I thought this would be a fun project as well as something that I could use whilst playing. I can't host it so the source code, and installation instructions, can be found in this repo so that it is publicly accessible. Although many programs like this already exist, and do it better, I simply wanted to try to make my own, allowing me the opportunity to learn how web scraping works and implement it into something potentially useful.

@@ -1,20 +1,35 @@
-# temtype
-**temtype** is a locally hosted website that shows you what types are strong, or weak, against certain TemTem.<br>
-Below is a gif demonstrating how to use the website which presents some cool features like showing the Luma variant on hover.
+# TemType 
 
-<img src="https://i.imgur.com/YJtkB5I.gif"/>
+## Description
 
-## How does it work?
-This website runs locally on the user's PC and uses python (flask) to scrape data off of the internet, as well as local json files, to return type matchups of certain TemTem based on the user's input.
+This project is a web application built with Flask that provides information about Temtem creatures, including their types, weaknesses, and matchups. The main functionalities include searching for a specific Temtem, displaying its types, and showing the matchups with other types. This works by scraping data from the Temtem Fandom Wiki. It uses the `fandom` Python module along with `requests` and `BeautifulSoup` for web scraping.
 
-## How do I install?
+## Functions:
+
+- `FindTem(temtem)`: Checks if a Temtem exists on the Fandom Wiki.
+- `ScrapeSummary(temtem)`: Scrapes the summary of a Temtem.
+- `ScrapePicture(temtem)`: Scrapes images of a Temtem.
+- `ScrapeType(temtem)`: Scrapes the types of a Temtem.
+- `ScrapeMatchup(temtem)`: Scrapes the type matchups of a Temtem.
+
+## Demo in Action
+
+Include a gif here that demonstrates the usage of the Temtype web application. This will provide users with a visual representation of how the application works.
+
+![Demo](https://i.imgur.com/YJtkB5I.gif)
+
+## Usage
+
+To run the web application:
+
 1. Install Python (3.8).
 2. Download the files as zip, and extract into a new folder.
 3. Open the terminal in said folder and run the following command:
 `pip install -r requirements.txt`
 4. Open the file: `run_temtype.py` 
     - The cmd window will immediately close, this is normal.
-5. Open `127.0.0.1:5000` in your browser and enjoy!
+5. Access the application in your web browser at `http://localhost:5000`.
 
-## Why did I make it?
-I found myself always checking the wiki when playing TemTem to see the type matchups. I thought this would be a fun project as well as something that I could use whilst playing. I can't host it so the source code, and installation instructions, can be found in this repo so that it is publicly accessible. Although many programs like this already exist, and do it better, I simply wanted to try to make my own, allowing me the opportunity to learn how web scraping works and implement it into something potentially useful.
+## Note
+
+This project is designed to illustrate the use of Flask and web scraping for displaying Temtem information.

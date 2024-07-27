@@ -14,8 +14,6 @@ This project is a web application built with Flask that provides information abo
 
 ## Demo in Action
 
-Include a gif here that demonstrates the usage of the Temtype web application. This will provide users with a visual representation of how the application works.
-
 ![Demo](https://i.imgur.com/YJtkB5I.gif)
 
 ## Usage
